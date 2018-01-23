@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>css第二章</title>
+   <style type="text/css">
+   acronym[title]{
+       border-bottom: 1px dotted rgb(219, 23, 23);
+   }
+   acronym[title]:hover,acronym[title]:focus{
+       cursor: help;
+   }
+   #content div#main-content h2{
+       color: gray;
+   }
+   #content #main-content>h2{
+       color: blue;
+   }
+   body #content div[id="main-content"] h2{
+       color: green;
+   }
+   #main-content div.news-story h2{
+       color: yellow;
+   }
+   div#main-content div.news-story h2.first{
+       color: red;
+   }
+   p{
+       color: rgb(165, 23, 23);
+   }
+     </style>
+</head>
+<body>
+   <p>hiuy<acronym title="hskdjhgs">BHJUGSADU</acronym>lygfayigfyilgae</p> 
+   <div id="content">
+       <div id="main-content">
+           <h2>123</h2>
+           <p>想念的还是你宁武昂着我的眼波</p>
+        <div class="news-story">
+            <h2>456</h2>
+            <p>ghfduyjqduqegwtiygfeayigeiy</p>
+        </div>
+       </div>
+   </div>
+</body>
+</html>
