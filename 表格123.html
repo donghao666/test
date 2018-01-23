@@ -1,0 +1,83 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+html,body{
+    height: 100%;
+}
+body{
+    background: url(http://i.zeze.com/attachment/forum/201610/16/090958ug71wnfbgb4znnng.jpg)center center;
+    background-size: cover;
+}    
+
+			/*html的height：100% 不用也行，上面两个body完全可以合在一起，要不然代码冗余*/
+
+.green{
+	background-color:green;
+}
+.light-green{
+	background-color: red;
+}
+
+
+			/*css盒子选择器将了三种选择方式，下面定义class 所以用 "."+类名 在style里面写属性 */
+
+
+</style>
+</head>
+<body>
+  <table width="20%" border="1">
+      <colgroup>
+      <col class="green">				<!-- 只定义了class 不在上面写属性没用的大哥 -->
+      <col class="light-green">      
+      </colgroup>
+      <thead>
+      <tr>
+          <td colspan="2" style="text-align: center">学生信息表</td>
+      </tr>
+         </thead>
+      <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+      </tr>
+      <tbody>
+      <tr>
+          <td>董浩</td>
+          <td>21</td>
+      </tr>
+      <tr>
+          <td>胡宝</td>
+          <td>6</td>
+      </tr>
+      </tbody>
+  </table>
+  <hr>
+  <table width="20%" border="1">
+      <colgroup>
+      <col class="green" span="2">
+      </colgroup>
+    <caption>学生信息表</caption>
+    <tr>
+          <th>姓名</th>
+          <th>年龄</th>
+      </tr>
+    <tr>
+      <td>董浩</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>胡宝</td>
+      <td>6</td>
+    </tr>
+  </table>
+  <ul role="menubar">
+      <li role="menuitem">栏目1</li>
+      <li role="menuitem">栏目2</li>
+      <li role="menuitem">栏目3</li>
+  </ul>
+   <ul role="menubar">
+      <li role="menuitem" aria-haspopup="false">栏目1</li>
+      <li role="menuitem" aria-haspopup="false">栏目2</li>
+      <li role="menuitem" aria-haspopup="false">栏目3</li>
+  </ul>
+</body>
